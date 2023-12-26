@@ -11,38 +11,37 @@ const RegisterSection = () => {
         Register
       </h1>
 
-      <div>
-        <form className='flex flex-col gap-3'>
-          <input
-            placeholder='Username'
-            type={"text"}
-            className='p-3 rounded-md bg-white/80'
-          />
+      <div className='flex flex-col gap-3'>
+        <input
+          placeholder='Username'
+          type={"text"}
+          className='p-3 rounded-md bg-white/80'
+        />
 
-          <input
-            placeholder='Password'
-            type={"password"}
-            className='p-3 rounded-md bg-white/80'
-          />
+        <input
+          placeholder='Password'
+          type={"password"}
+          className='p-3 rounded-md bg-white/80'
+        />
 
-          <input
-            placeholder='Confirm Password'
-            type={"password"}
-            className='p-3 rounded-md bg-white/80'
-          />
+        <input
+          placeholder='Confirm Password'
+          type={"password"}
+          className='p-3 rounded-md bg-white/80'
+        />
 
-          <Button onClick={() => register()}>Login</Button>
-        </form>
-        <p className='mt-4'>
-          Have an account?{" "}
-          <a
-            className='border-b border-black cursor-pointer hover:text-white hover:border-white hover:pb-1 transition-all duration-200'
-            onClick={() => setType("login")}
-          >
-            Log in now
-          </a>
-        </p>
+        <Button onClick={() => register()}>Login</Button>
       </div>
+
+      <p className='mt-3'>
+        Have an account?{" "}
+        <a
+          className='border-b border-black cursor-pointer hover:text-white hover:border-white hover:pb-1 transition-all duration-200'
+          onClick={() => setType("login")}
+        >
+          Log in now
+        </a>
+      </p>
     </>
   );
 };
