@@ -1,4 +1,16 @@
+"use client";
+
+import { useRouter } from "../node_modules/next/navigation";
+import Button from "./components/Button";
+
 export default function Home() {
+  const router = useRouter();
+
+  const logIn = () => {
+    console.log("hey");
+    router.push("/dashboard");
+  };
+
   return (
     <main className='flex h-screen items-center overflow-hidden justify-between'>
       <div className='basis-1/2'></div>
@@ -14,13 +26,13 @@ export default function Home() {
               placeholder='Username'
               className='p-3 rounded-md bg-white/80'
             />
+
             <input
               placeholder='Password'
               className='p-3 rounded-md bg-white/80'
             />
-            <button className='py-4 px-10 w-full bg-white/10 hover:bg-white/50 rounded-md transition-all'>
-              Login
-            </button>
+
+            <Button onClick={() => logIn()}>Login</Button>
           </form>
         </div>
       </div>
