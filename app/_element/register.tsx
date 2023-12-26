@@ -33,7 +33,7 @@ const RegisterSection = () => {
         <Button onClick={() => register()}>Login</Button>
       </div>
 
-      <p className='mt-3'>
+      <p>
         Have an account?{" "}
         <a
           className='border-b border-black cursor-pointer hover:text-white hover:border-white hover:pb-1 transition-all duration-200'

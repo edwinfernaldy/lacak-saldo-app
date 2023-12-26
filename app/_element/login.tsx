@@ -22,16 +22,17 @@ const LoginSection = () => {
         <input placeholder='Password' className='p-3 rounded-md bg-white/80' />
 
         <Button onClick={() => logIn()}>Login</Button>
-        <p>
-          Don&lsquo;t have an account?{" "}
-          <a
-            className='border-b border-black cursor-pointer hover:text-white hover:border-white hover:pb-1 transition-all duration-200'
-            onClick={() => setType("register")}
-          >
-            register here
-          </a>
-        </p>
       </div>
+
+      <p>
+        Don&lsquo;t have an account?{" "}
+        <a
+          className='border-b border-black cursor-pointer hover:text-white hover:border-white hover:pb-1 transition-all duration-200'
+          onClick={() => setType("register")}
+        >
+          Register here
+        </a>
+      </p>
     </>
   );
 };
